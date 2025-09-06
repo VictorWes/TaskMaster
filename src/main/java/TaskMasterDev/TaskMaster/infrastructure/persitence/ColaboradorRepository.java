@@ -1,4 +1,6 @@
 package TaskMasterDev.TaskMaster.infrastructure.persitence;
 
-public interface ColaboradorRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ColaboradorRepository extends JpaRepository<ColaboradorEntity, Long> {
 }

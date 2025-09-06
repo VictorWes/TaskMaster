@@ -1,14 +1,20 @@
 package TaskMasterDev.TaskMaster.core.entities;
 
+import TaskMasterDev.TaskMaster.core.enums.Cargo;
+
+import java.time.LocalDateTime;
+
 public record Colaborador (
 
         Long id,
 
         String nome,
 
-        String cargo,
+        Cargo cargo,
 
-        String matricula
+        String matricula,
+
+        LocalDateTime dataCriado
 
 
 

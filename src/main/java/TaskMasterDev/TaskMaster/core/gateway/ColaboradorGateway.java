@@ -1,4 +1,9 @@
 package TaskMasterDev.TaskMaster.core.gateway;
 
-public class ColaboradorGateWay {
+import TaskMasterDev.TaskMaster.core.entities.Colaborador;
+
+public interface ColaboradorGateway {
+
+  Colaborador criarColaborador(Colaborador colaborador);
+
 }

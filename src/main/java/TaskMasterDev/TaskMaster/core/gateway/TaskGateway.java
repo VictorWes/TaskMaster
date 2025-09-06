@@ -1,4 +1,4 @@
 package TaskMasterDev.TaskMaster.core.gateway;
 
-public class TaskGateway {
+public interface TaskGateway {
 }
