@@ -32,7 +32,7 @@ public class ColaboradorEntity {
 
     private LocalDateTime dataCriado;
 
-    @OneToMany(mappedBy = "colaboradorEntity")
+    @OneToMany(mappedBy = "colaboradorId", fetch = FetchType.LAZY)
     List<TaskEntity> tasks = new ArrayList<>();
 
 
@@ -43,4 +43,6 @@ public class ColaboradorEntity {
         this.matricula = matricula;
         this.dataCriado = dataCriado;
     }
+
+
 }

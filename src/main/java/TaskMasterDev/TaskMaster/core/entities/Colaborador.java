@@ -3,6 +3,7 @@ package TaskMasterDev.TaskMaster.core.entities;
 import TaskMasterDev.TaskMaster.core.enums.Cargo;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 public record Colaborador (
 
@@ -14,7 +15,8 @@ public record Colaborador (
 
         String matricula,
 
-        LocalDateTime dataCriado
+        LocalDateTime dataCriado,
+        List<Task> task
 
 
 

@@ -1,8 +1,10 @@
 package TaskMasterDev.TaskMaster.infrastructure.dtos;
 
+import TaskMasterDev.TaskMaster.core.entities.Task;
 import TaskMasterDev.TaskMaster.core.enums.Cargo;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 public record ColaboradorDto(
 
@@ -14,9 +16,10 @@ public record ColaboradorDto(
 
         String matricula,
 
-        LocalDateTime dataCriado
+        LocalDateTime dataCriado,
 
-
+        List<TaskDto> task
 
 ) {
+
 }

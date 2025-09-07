@@ -1,20 +1,21 @@
 package TaskMasterDev.TaskMaster.core.useCases;
 
 import TaskMasterDev.TaskMaster.core.entities.Colaborador;
+import TaskMasterDev.TaskMaster.core.gateway.ColaboradorGateway;
 import TaskMasterDev.TaskMaster.core.gateway.TaskGateway;
 
 import java.util.Optional;
 
-public class ProcurarTaskIdUseCaseImpl implements ProcurarTaskIdUseCase{
+public class ProcurarColaboradorIdUseCaseImpl implements ProcurarColaboradorIdUseCase {
 
-    private final TaskGateway taskGateway;
+    private final ColaboradorGateway colaboradorGateway;
 
-    public ProcurarTaskIdUseCaseImpl(TaskGateway taskGateway) {
-        this.taskGateway = taskGateway;
+    public ProcurarColaboradorIdUseCaseImpl(ColaboradorGateway colaboradorGateway) {
+        this.colaboradorGateway = colaboradorGateway;
     }
 
     @Override
     public Optional<Colaborador> execute(Long id) {
-        return Optional.empty();
+        return colaboradorGateway.findIdColaborador(id);
     }
 }

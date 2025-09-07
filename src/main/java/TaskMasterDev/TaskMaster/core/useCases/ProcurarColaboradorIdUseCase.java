@@ -5,7 +5,7 @@ import TaskMasterDev.TaskMaster.core.entities.Colaborador;
 
 import java.util.Optional;
 
-public interface ProcurarTaskIdUseCase {
+public interface ProcurarColaboradorIdUseCase {
 
     Optional<Colaborador> execute(Long id);
 

@@ -2,8 +2,8 @@ package TaskMasterDev.TaskMaster.core.entities;
 
 import TaskMasterDev.TaskMaster.core.enums.CriticidadeTask;
 import TaskMasterDev.TaskMaster.core.enums.StatusTask;
+import TaskMasterDev.TaskMaster.core.gateway.ColaboradorGateway;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public record Task(
@@ -16,13 +16,13 @@ public record Task(
 
         CriticidadeTask criticidade,
 
-        String colaborador,
-
         StatusTask status,
 
         LocalDateTime dataCriado,
 
-        LocalDateTime dataFechado
+        LocalDateTime dataFechado,
+
+        Colaborador colaboradorTask
 
 
 
