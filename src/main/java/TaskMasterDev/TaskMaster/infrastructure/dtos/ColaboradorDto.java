@@ -1,6 +1,5 @@
 package TaskMasterDev.TaskMaster.infrastructure.dtos;
 
-import TaskMasterDev.TaskMaster.core.entities.Task;
 import TaskMasterDev.TaskMaster.core.enums.Cargo;
 
 import java.time.LocalDateTime;

@@ -2,7 +2,6 @@ package TaskMasterDev.TaskMaster.core.entities;
 
 import TaskMasterDev.TaskMaster.core.enums.CriticidadeTask;
 import TaskMasterDev.TaskMaster.core.enums.StatusTask;
-import TaskMasterDev.TaskMaster.core.gateway.ColaboradorGateway;
 
 import java.time.LocalDateTime;
 

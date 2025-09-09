@@ -1,7 +1,6 @@
 package TaskMasterDev.TaskMaster.infrastructure.persitence;
 
 
-import TaskMasterDev.TaskMaster.core.entities.Task;
 import TaskMasterDev.TaskMaster.core.enums.Cargo;
 import jakarta.persistence.*;
 import lombok.*;

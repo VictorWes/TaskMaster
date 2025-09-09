@@ -5,7 +5,6 @@ import TaskMasterDev.TaskMaster.core.enums.CriticidadeTask;
 import TaskMasterDev.TaskMaster.core.enums.StatusTask;
 import com.fasterxml.jackson.annotation.JsonIdentityReference;
 import jakarta.persistence.*;
-import lombok.*;
 
 import java.time.LocalDateTime;
 

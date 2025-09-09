@@ -6,7 +6,6 @@ import TaskMasterDev.TaskMaster.infrastructure.dtos.TaskDto;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
 
 @Component
 public class TaskDtoMapper {

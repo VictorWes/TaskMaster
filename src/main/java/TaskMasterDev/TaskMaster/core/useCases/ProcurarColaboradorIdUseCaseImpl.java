@@ -2,7 +2,6 @@ package TaskMasterDev.TaskMaster.core.useCases;
 
 import TaskMasterDev.TaskMaster.core.entities.Colaborador;
 import TaskMasterDev.TaskMaster.core.gateway.ColaboradorGateway;
-import TaskMasterDev.TaskMaster.core.gateway.TaskGateway;
 
 import java.util.Optional;
 

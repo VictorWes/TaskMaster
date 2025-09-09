@@ -1,9 +1,7 @@
 package TaskMasterDev.TaskMaster.infrastructure.dtos;
 
-import TaskMasterDev.TaskMaster.core.entities.Colaborador;
 import TaskMasterDev.TaskMaster.core.enums.CriticidadeTask;
 import TaskMasterDev.TaskMaster.core.enums.StatusTask;
-import TaskMasterDev.TaskMaster.infrastructure.persitence.ColaboradorEntity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 

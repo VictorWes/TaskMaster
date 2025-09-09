@@ -5,7 +5,6 @@ import TaskMasterDev.TaskMaster.core.useCases.CriarColaboradorUseCase;
 import TaskMasterDev.TaskMaster.core.useCases.ProcurarColaboradorIdUseCase;
 import TaskMasterDev.TaskMaster.infrastructure.dtos.ColaboradorDto;
 import TaskMasterDev.TaskMaster.infrastructure.mapper.ColaboradorDtoMapper;
-import TaskMasterDev.TaskMaster.infrastructure.persitence.ColaboradorEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

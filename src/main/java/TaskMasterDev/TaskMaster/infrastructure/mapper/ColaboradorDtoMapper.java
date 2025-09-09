@@ -1,12 +1,9 @@
 package TaskMasterDev.TaskMaster.infrastructure.mapper;
 
 import TaskMasterDev.TaskMaster.core.entities.Colaborador;
-import TaskMasterDev.TaskMaster.core.entities.Task;
 import TaskMasterDev.TaskMaster.infrastructure.dtos.ColaboradorDto;
 import TaskMasterDev.TaskMaster.infrastructure.dtos.TaskDto;
 import org.springframework.stereotype.Component;
-
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
