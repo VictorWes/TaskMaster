@@ -1,17 +1,12 @@
 package TaskMasterDev.TaskMaster.infrastructure.gateway;
 
 import TaskMasterDev.TaskMaster.core.entities.Colaborador;
-import TaskMasterDev.TaskMaster.core.entities.Task;
 import TaskMasterDev.TaskMaster.core.gateway.ColaboradorGateway;
 import TaskMasterDev.TaskMaster.infrastructure.mapper.ColaboradorEntityMapper;
 import TaskMasterDev.TaskMaster.infrastructure.persitence.ColaboradorEntity;
 import TaskMasterDev.TaskMaster.infrastructure.persitence.ColaboradorRepository;
-import TaskMasterDev.TaskMaster.infrastructure.persitence.TaskEntity;
 import org.springframework.stereotype.Component;
-
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Optional;
 
 

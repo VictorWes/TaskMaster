@@ -21,7 +21,7 @@ public record TaskDto(
         @JsonInclude(JsonInclude.Include.NON_NULL)
         LocalDateTime dataFechado,
 
-        @JsonInclude(JsonInclude.Include.NON_NULL) // Só inclui se não for null
+
         @JsonIgnore
         Long colaboradorId
 ) {

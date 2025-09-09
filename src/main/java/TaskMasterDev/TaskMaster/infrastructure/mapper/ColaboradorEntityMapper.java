@@ -4,10 +4,7 @@ package TaskMasterDev.TaskMaster.infrastructure.mapper;
 import TaskMasterDev.TaskMaster.core.entities.Colaborador;
 import TaskMasterDev.TaskMaster.core.entities.Task;
 import TaskMasterDev.TaskMaster.infrastructure.persitence.ColaboradorEntity;
-import TaskMasterDev.TaskMaster.infrastructure.persitence.TaskEntity;
 import org.springframework.stereotype.Component;
-
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -44,7 +41,7 @@ public class ColaboradorEntityMapper {
             return null;
         }
 
-        // Mapear tasks se existirem
+
         List<Task> tasks = null;
         if (colaboradorEntity.getTasks() != null && !colaboradorEntity.getTasks().isEmpty()) {
             tasks = colaboradorEntity.getTasks().stream()

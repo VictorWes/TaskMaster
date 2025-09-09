@@ -36,14 +36,14 @@ public class TaskRepositoryGateway implements TaskGateway {
                         task.colaboradorTask().id());
             }
 
-            // Criar nova task com data de criação
+
             Task taskComData = new Task(
                     task.id(),
                     task.nomeTask(),
                     task.descricao(),
                     task.criticidade(),
                     task.status(),
-                    LocalDateTime.now(), // Definir data de criação
+                    LocalDateTime.now(),
                     task.dataFechado(),
                     task.colaboradorTask()
             );
