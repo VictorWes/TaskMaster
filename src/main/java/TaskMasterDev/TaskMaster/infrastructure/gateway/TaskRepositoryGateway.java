@@ -57,4 +57,47 @@ public class TaskRepositoryGateway implements TaskGateway {
 
         throw new RuntimeException("ID do colaborador é obrigatório");
     }
+
+    @Override
+    public Optional<Task> findTaskId(Long id) {
+        Optional<TaskEntity> idLocalizado = taskRepository.findById(id);
+        return idLocalizado.map(taskEntityMapper::toDomain) ;
+    }
+
+    @Override
+    public Task alterarTask(Task task, Long id) {
+        Optional<TaskEntity> idLocalizado = taskRepository.findById(id);
+        idLocalizado.map(taskEntityMapper::toDomain);
+
+        if (task.colaboradorTask() != null && task.colaboradorTask().id() != null) {
+            Optional<ColaboradorEntity> colaborador = colaboradorRepository
+                    .findById(task.colaboradorTask().id());
+
+            if (colaborador.isEmpty()) {
+                throw new RuntimeException("Colaborador não encontrado com ID: " +
+                        task.colaboradorTask().id());
+            }
+
+
+            Task taskComData = new Task(
+                    task.id(),
+                    task.nomeTask(),
+                    task.descricao(),
+                    task.criticidade(),
+                    task.status(),
+                    LocalDateTime.now(),
+                    task.dataFechado(),
+                    task.colaboradorTask()
+            );
+
+            TaskEntity entity = taskEntityMapper.toEntity(taskComData);
+            entity.setColaboradorId(colaborador.get());
+
+            TaskEntity savedEntity = taskRepository.save(entity);
+
+
+
+    }
+
+
 }

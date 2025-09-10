@@ -48,6 +48,7 @@ public class ColaboradorController {
 
         if (colaborador.isPresent()) {
             Map<String, Object> response = new HashMap<>();
+            response.put("message", "Colaborador localizado com sucesso");
             response.put("colaborador", colaboradorDtoMapper.toDto(colaborador.get()));
             return ResponseEntity.ok(response);
         }

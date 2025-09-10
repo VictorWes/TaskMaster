@@ -25,5 +25,15 @@ public class BeanCofinguration {
         return new ProcurarColaboradorIdUseCaseImpl(colaboradorGateway);
     }
 
+    @Bean
+    public ProcurarTaskIdUseCase findIdTask(TaskGateway taskGateway){
+        return new ProcurarTaskIdUseCaseImpl(taskGateway);
+    }
+
+    @Bean
+    public AlterarTaskIdUseCase alterarTask(TaskGateway taskGateway){
+        return new AlterarTaskIdUseCaseImpl(taskGateway);
+    }
+
 
 }
