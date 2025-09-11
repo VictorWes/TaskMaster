@@ -69,5 +69,11 @@ public class TaskController {
         return ResponseEntity.notFound().build();
 
     }
+
+    @PathVariable("{id}")
+    public ResponseEntity<Map<String,Object>> alterarDadosTask(@PathVariable Long id, @RequestBody TaskCreateRequest request){
+
+
+    }
 }
 
